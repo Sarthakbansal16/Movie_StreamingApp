@@ -15,8 +15,10 @@ app.use(express.urlencoded({extended: true, limit: "16kb"}))
 app.use(cookieParser())
 
 import authRouter from "./routes/auth.route.js"
+import userRouter from "./routes/user.route.js"
 
 app.use("/api/auth",authRouter)
+app.use("/api/users",userRouter)
 
 
 export{app}
