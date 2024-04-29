@@ -17,10 +17,13 @@ app.use(cookieParser())
 import authRouter from "./routes/auth.route.js"
 import userRouter from "./routes/user.route.js"
 import movieRouter from "./routes/movie.route.js"
+import listRouter from "./routes/list.route.js"
 
 app.use("/api/auth",authRouter)
 app.use("/api/users",userRouter)
 app.use("/api/movies",movieRouter)
+app.use("/api/lists",listRouter)
+
 
 
 export{app}
