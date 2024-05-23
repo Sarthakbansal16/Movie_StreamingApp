@@ -1,4 +1,6 @@
-import { InfoOutlined, PlayArrow } from "@material-ui/icons";
+//import { InfoOutlined, PlayArrow } from "@material-ui/icons";
+import PlayArrowIcon from '@material-ui/icons/PlayArrow';
+import InfoIcon from '@material-ui/icons/Info';
 import axios from "axios";
 import { useEffect, useState } from "react";
 import "./featured.scss";
@@ -12,7 +14,7 @@ export default function Featured({ type, setGenre }) {
         const res = await axios.get(`/movies/random?type=${type}`, {
           headers: {
             token:
-              "Bearer "+JSON.parse(localStorage.getItem("user")).accessToken,
+              "Bearer "+JSON.parse(localStorage.get bItem("user")).accessToken,
           },
         });
         setContent(res.data[0]);
@@ -57,11 +59,11 @@ export default function Featured({ type, setGenre }) {
         <span className="desc">{content.desc}</span>
         <div className="buttons">
           <button className="play">
-            <PlayArrow />
+            <PlayArrowIcon />
             <span>Play</span>
           </button>
           <button className="more">
-            <InfoOutlined />
+            <InfoIcon/>
             <span>Info</span>
           </button>
         </div>
