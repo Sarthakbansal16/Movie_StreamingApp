@@ -15,7 +15,7 @@ import { AuthContext } from "./authContext/AuthContext";
 const App = () => {
   const { user } = useContext(AuthContext);
   //const user=true;
-  return (
+  return ( 
     <Router>
       <Routes>
         <Route exact path="/">

@@ -1,6 +1,6 @@
-import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
-import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone';
-import SearchIcon from '@material-ui/icons/Search';
+import SearchIcon from '@mui/icons-material/Search';
+import NotificationsIcon from '@mui/icons-material/Notifications';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import { useContext, useState } from "react";
 import "./navbar.scss";
 import { Link } from "react-router-dom";
@@ -38,7 +38,7 @@ const Navbar = () => {
         <div className="right">
           <SearchIcon className="icon" />
           <span>KID</span>
-          <NotificationsNoneIcon className="icon" />
+          <NotificationsIcon  className="icon" />
           <img
             src="https://images.pexels.com/photos/6899260/pexels-photo-6899260.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
             alt=""

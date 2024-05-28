@@ -1,4 +1,4 @@
-/import Navbar from "../../components/navbar/Navbar";
+import Navbar from "../../components/navbar/Navbar.jsx"
 import Featured from "../../components/featured/Featured";
 import "./home.scss";
 import List from "../../components/list/List";
